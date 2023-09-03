@@ -1,0 +1,70 @@
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.robin {
+    font-weight: 500;
+    font-size: 80px;
+    position: relative;
+    text-align: center;
+    letter-spacing: -4px;
+}
+
+.robin span {
+    position: absolute;
+    top: -44px;
+    transform: translateX(-25px) rotate(-20deg) scale(0.8);
+}
+
+.shino {
+    font-weight: 500;
+    text-align: center;
+    color: deeppink;
+}
+
+.shino-span {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+
+.heart {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 8px;
+    animation: ease-in-out 1.8s infinite heartbeat;
+}
+
+
+p {
+    color: darkorange;
+    text-align: center;
+}
+
+
+.input-container {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.red {
+    color: red;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(120%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
